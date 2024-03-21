@@ -6,7 +6,9 @@ RhinoPython Plugin
 
 Description:
 
-Image to mesh is a plugin that converts bitmap images into a mesh in Rhino. Pixel brightness gets mapped into Z displacement. The script will average multiple images together based on brightness per pixel, but all images used must have the same dimensions. Keep in mind that images larger than 1000 pixels in either direction can take a long time and produce extremely large meshes!
+Image to mesh is a RhinoPython plugin that converts bitmap images into a mesh in Rhino. Pixel brightness gets mapped into Z displacement. The script will average multiple images together based on brightness per pixel, but all images used must have the same dimensions. Images larger than 1000 pixels in X or Y will produce meshes with a high polygon count. 
+
+This tool is good for producing a pre-sculpt mesh for programs like ZBrush, Meshmixer or Blender. Performing planar intersections on the mesh can be useful for vector tracing, but curves need to be rebuilt and optimized. Higher resolution means more pixel interpolation artifacts/quads in the mesh. Best bet is to try images at different resolutions until you get satifactory results.
 
 Instructions:
 
